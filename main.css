@@ -133,7 +133,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 22px;
+    font-size: 1.8vh;
     font-family: arial;
     position: relative;
     animation: 1s drop;
