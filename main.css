@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mainSection {
+    background-image: url("img/chaney-zimmerman-P1QpccAUnaw-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.textSection {
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.textSection h1 {
+    text-align: center;
+    font-size: 4vw;
+    margin: 2rem 3rem 10rem 3rem;
+    text-transform: capitalize;
+}
+
+#btn {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 2.3vw;
+    transition: all .5s;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+#btn:hover {
+    color: #000000;
+    background: #00f7ff;
+    box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff, 0 0 40px #00f7ff;
+    transition-delay: 1s;
+    border-radius: 10px;
+}
+
+#btn span {
+    position: absolute;
+    display: block;
+}
+
+#btn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00f7ff);
+}
+
+#btn:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+#btn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #00f7ff);
+}
+
+#btn:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: .25s;
+}
+
+#btn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #00f7ff);
+}
+
+#btn:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: .5s;
+}
+
+#btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #00f7ff);
+}
+
+#btn:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: .75s;
+}
+
+
+.modal-parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+.modal {
+    background: white;
+    width: 60vw;
+    height: 60vh;
+    padding: 30px;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-family: arial;
+    position: relative;
+    animation: 1s drop;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.modal h2{
+    margin-bottom: 3rem;
+}
+
+@keyframes drop {
+    0% {
+        top: -100px;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+.closeIcon {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    font-size: 3vw;
+    cursor: pointer;
+    color: #000000;
+    width: 100%;
+    text-align: right;
+    margin: 1rem 0;
+}
+
+.mainSection {
+    transition: 2s;
+}
+
+/* .closeIcon {
+    position: absolute;
+    color: #000000;
+    width: 100%;
+    text-align: right;
+    margin: 1rem 0;
+    cursor: pointer;
+} */
+
+/* end modal section */
+
+/* Start btn style*/
+
+/* start modal section */
